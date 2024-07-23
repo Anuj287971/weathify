@@ -550,6 +550,18 @@ class MyDrawer extends StatelessWidget {
               );
             },
           ),
+          ListTile(
+            title: comfortatext(translation('About', settings["Language"]), 25,
+                settings, color: colors[2]),
+            leading: Icon(Icons.info_outline, color: colors[2],),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => InfoPage(primary: primary, settings: settings,
+                  back: back,)),
+              );
+            },
+          ),
           
           
         ],
